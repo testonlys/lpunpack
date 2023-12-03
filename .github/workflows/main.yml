@@ -16,7 +16,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '2.7'  # 替换为你的 Python 版本
+        python-version: '3.x'  # 替换为你的 Python 版本
 
     - name: Install dependencies
       run: |
