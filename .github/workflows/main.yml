@@ -3,7 +3,7 @@ name: Build exe
 on:
   push:
     branches:
-      - main  # 你的主要分支
+      - master  # 你的主要分支
 
 jobs:
   build:
