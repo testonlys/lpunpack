@@ -25,12 +25,9 @@ jobs:
 
     - name: Build exe
       run: pyinstaller --onefile lpunpack.py  # 替换 your_script.py 为你的 Python 文件名
-      
-    - name: Copy exe to artifacts
-      run: cp  main.exe $GITHUB_WORKSPACE/dist
 
     - name: Upload exe
       uses: actions/upload-artifact@v2
       with:
         name: my-exe-artifact
-        path: $GITHUB_WORKSPACE/dist/main.exe
+        path: $GITHUB_WORKSPACE/*.exe
